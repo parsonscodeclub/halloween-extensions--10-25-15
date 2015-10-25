@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Spider Crawling",
+  "description": "This extension makes a spider show up on the current page",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      //"js": ["spider.js"],
+      "css": ["spider.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "*://*/*"
+  ],
+  "web_accessible_resources": [
+    "spider.gif"
+  ]
+}
