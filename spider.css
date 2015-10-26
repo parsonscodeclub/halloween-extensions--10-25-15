@@ -1,3 +1,7 @@
+/*
+    use position fixed so it doesn't move when scrolling.
+    the rotation is so it crawls across the bottom left corner.
+*/
 .spider-gif {
   position: fixed;
   bottom: 0;
